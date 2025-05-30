@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             panel1 = new Panel();
             QuitBttn = new Label();
             MainTitleLabel = new Label();
@@ -114,7 +114,7 @@
             Username.Hint = "Username";
             Username.InsertKeyMode = InsertKeyMode.Default;
             Username.LeadingIcon = null;
-            Username.Location = new Point(12, 117);
+            Username.Location = new Point(37, 145);
             Username.Mask = "";
             Username.MaxLength = 32767;
             Username.MouseState = MaterialSkin.MouseState.OUT;
@@ -156,7 +156,7 @@
             FullName.Hint = "Full name";
             FullName.InsertKeyMode = InsertKeyMode.Default;
             FullName.LeadingIcon = null;
-            FullName.Location = new Point(12, 171);
+            FullName.Location = new Point(37, 199);
             FullName.Mask = "";
             FullName.MaxLength = 32767;
             FullName.MouseState = MaterialSkin.MouseState.OUT;
@@ -198,7 +198,7 @@
             Password.Hint = "Password";
             Password.InsertKeyMode = InsertKeyMode.Default;
             Password.LeadingIcon = null;
-            Password.Location = new Point(12, 225);
+            Password.Location = new Point(37, 253);
             Password.Mask = "";
             Password.MaxLength = 32767;
             Password.MouseState = MaterialSkin.MouseState.OUT;
@@ -240,7 +240,7 @@
             Phone.Hint = "Phone";
             Phone.InsertKeyMode = InsertKeyMode.Default;
             Phone.LeadingIcon = null;
-            Phone.Location = new Point(12, 279);
+            Phone.Location = new Point(37, 307);
             Phone.Mask = "";
             Phone.MaxLength = 32767;
             Phone.MouseState = MaterialSkin.MouseState.OUT;
@@ -275,7 +275,7 @@
             AddBttn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddBttn.HighEmphasis = true;
             AddBttn.Icon = null;
-            AddBttn.Location = new Point(13, 348);
+            AddBttn.Location = new Point(37, 376);
             AddBttn.Margin = new Padding(4, 6, 4, 6);
             AddBttn.MouseState = MaterialSkin.MouseState.HOVER;
             AddBttn.Name = "AddBttn";
@@ -297,7 +297,7 @@
             EditBttn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             EditBttn.HighEmphasis = true;
             EditBttn.Icon = null;
-            EditBttn.Location = new Point(85, 348);
+            EditBttn.Location = new Point(109, 376);
             EditBttn.Margin = new Padding(4, 6, 4, 6);
             EditBttn.MouseState = MaterialSkin.MouseState.HOVER;
             EditBttn.Name = "EditBttn";
@@ -319,7 +319,7 @@
             DeleteBttn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DeleteBttn.HighEmphasis = true;
             DeleteBttn.Icon = null;
-            DeleteBttn.Location = new Point(157, 348);
+            DeleteBttn.Location = new Point(181, 376);
             DeleteBttn.Margin = new Padding(4, 6, 4, 6);
             DeleteBttn.MouseState = MaterialSkin.MouseState.HOVER;
             DeleteBttn.Name = "DeleteBttn";
@@ -340,7 +340,7 @@
             HomeBttn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             HomeBttn.HighEmphasis = true;
             HomeBttn.Icon = null;
-            HomeBttn.Location = new Point(85, 396);
+            HomeBttn.Location = new Point(752, 417);
             HomeBttn.Margin = new Padding(4, 6, 4, 6);
             HomeBttn.MouseState = MaterialSkin.MouseState.HOVER;
             HomeBttn.Name = "HomeBttn";
@@ -351,29 +351,30 @@
             HomeBttn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             HomeBttn.UseAccentColor = false;
             HomeBttn.UseVisualStyleBackColor = true;
+            HomeBttn.Click += HomeBttn_Click;
             // 
             // UserDGV
             // 
-            dataGridViewCellStyle4.BackColor = Color.White;
-            UserDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(100, 88, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.True;
-            UserDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = Color.White;
+            UserDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(100, 88, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            UserDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             UserDGV.ColumnHeadersHeight = 4;
             UserDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(231, 229, 255);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(71, 69, 94);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.False;
-            UserDGV.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(231, 229, 255);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(71, 69, 94);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            UserDGV.DefaultCellStyle = dataGridViewCellStyle3;
             UserDGV.GridColor = Color.FromArgb(231, 229, 255);
             UserDGV.Location = new Point(294, 171);
             UserDGV.Name = "UserDGV";
@@ -407,11 +408,11 @@
             // guna2Panel1
             // 
             guna2Panel1.BackColor = Color.Crimson;
-            guna2Panel1.CustomizableEdges = customizableEdges3;
+            guna2Panel1.CustomizableEdges = customizableEdges1;
             guna2Panel1.Dock = DockStyle.Bottom;
             guna2Panel1.Location = new Point(0, 462);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges2;
             guna2Panel1.Size = new Size(850, 28);
             guna2Panel1.TabIndex = 10;
             // 

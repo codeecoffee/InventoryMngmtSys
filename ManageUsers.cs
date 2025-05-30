@@ -116,5 +116,10 @@ namespace InventoryMngmtSys
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void HomeBttn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
