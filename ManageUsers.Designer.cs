@@ -82,7 +82,7 @@
             MainTitleLabel.AutoSize = true;
             MainTitleLabel.Font = new Font("Franklin Gothic Medium", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             MainTitleLabel.ForeColor = Color.White;
-            MainTitleLabel.Location = new Point(102, 11);
+            MainTitleLabel.Location = new Point(181, 9);
             MainTitleLabel.Name = "MainTitleLabel";
             MainTitleLabel.Size = new Size(471, 37);
             MainTitleLabel.TabIndex = 1;
@@ -93,7 +93,7 @@
             subTitleLabel.AutoSize = true;
             subTitleLabel.Font = new Font("Franklin Gothic Medium", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             subTitleLabel.ForeColor = Color.White;
-            subTitleLabel.Location = new Point(242, 46);
+            subTitleLabel.Location = new Point(294, 46);
             subTitleLabel.Name = "subTitleLabel";
             subTitleLabel.Size = new Size(180, 34);
             subTitleLabel.TabIndex = 0;
