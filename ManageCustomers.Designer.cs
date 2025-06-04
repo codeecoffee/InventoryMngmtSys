@@ -44,7 +44,7 @@
             DeleteBttn = new MaterialSkin.Controls.MaterialButton();
             EditBttn = new MaterialSkin.Controls.MaterialButton();
             AddBttn = new MaterialSkin.Controls.MaterialButton();
-            this.CustomerNameTb = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            CustomerNameTb = new MaterialSkin.Controls.MaterialMaskedTextBox();
             CustomerId = new MaterialSkin.Controls.MaterialMaskedTextBox();
             CustomerPhoneTb = new MaterialSkin.Controls.MaterialMaskedTextBox();
             panel1.SuspendLayout();
@@ -210,6 +210,7 @@
             DeleteBttn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             DeleteBttn.UseAccentColor = true;
             DeleteBttn.UseVisualStyleBackColor = false;
+            DeleteBttn.Click += DeleteBttn_Click;
             // 
             // EditBttn
             // 
@@ -231,6 +232,7 @@
             EditBttn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             EditBttn.UseAccentColor = false;
             EditBttn.UseVisualStyleBackColor = false;
+            EditBttn.Click += EditBttn_Click;
             // 
             // AddBttn
             // 
@@ -251,48 +253,49 @@
             AddBttn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             AddBttn.UseAccentColor = false;
             AddBttn.UseVisualStyleBackColor = true;
+            AddBttn.Click += AddBttn_Click;
             // 
             // CustomerNameTb
             // 
-            this.CustomerNameTb.AllowPromptAsInput = true;
-            this.CustomerNameTb.AnimateReadOnly = false;
-            this.CustomerNameTb.AsciiOnly = false;
-            this.CustomerNameTb.BackgroundImageLayout = ImageLayout.None;
-            this.CustomerNameTb.BeepOnError = false;
-            this.CustomerNameTb.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
-            this.CustomerNameTb.Depth = 0;
-            this.CustomerNameTb.Font = new Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.CustomerNameTb.HidePromptOnLeave = false;
-            this.CustomerNameTb.HideSelection = true;
-            this.CustomerNameTb.Hint = "Customer Name";
-            this.CustomerNameTb.InsertKeyMode = InsertKeyMode.Default;
-            this.CustomerNameTb.LeadingIcon = null;
-            this.CustomerNameTb.Location = new Point(37, 199);
-            this.CustomerNameTb.Mask = "";
-            this.CustomerNameTb.MaxLength = 32767;
-            this.CustomerNameTb.MouseState = MaterialSkin.MouseState.OUT;
-            this.CustomerNameTb.Name = "CustomerNameTb";
-            this.CustomerNameTb.PasswordChar = '\0';
-            this.CustomerNameTb.PrefixSuffixText = null;
-            this.CustomerNameTb.PromptChar = '_';
-            this.CustomerNameTb.ReadOnly = false;
-            this.CustomerNameTb.RejectInputOnFirstFailure = false;
-            this.CustomerNameTb.ResetOnPrompt = true;
-            this.CustomerNameTb.ResetOnSpace = true;
-            this.CustomerNameTb.RightToLeft = RightToLeft.No;
-            this.CustomerNameTb.SelectedText = "";
-            this.CustomerNameTb.SelectionLength = 0;
-            this.CustomerNameTb.SelectionStart = 0;
-            this.CustomerNameTb.ShortcutsEnabled = true;
-            this.CustomerNameTb.Size = new Size(218, 48);
-            this.CustomerNameTb.SkipLiterals = true;
-            this.CustomerNameTb.TabIndex = 13;
-            this.CustomerNameTb.TabStop = false;
-            this.CustomerNameTb.TextAlign = HorizontalAlignment.Left;
-            this.CustomerNameTb.TextMaskFormat = MaskFormat.IncludeLiterals;
-            this.CustomerNameTb.TrailingIcon = null;
-            this.CustomerNameTb.UseSystemPasswordChar = false;
-            this.CustomerNameTb.ValidatingType = null;
+            CustomerNameTb.AllowPromptAsInput = true;
+            CustomerNameTb.AnimateReadOnly = false;
+            CustomerNameTb.AsciiOnly = false;
+            CustomerNameTb.BackgroundImageLayout = ImageLayout.None;
+            CustomerNameTb.BeepOnError = false;
+            CustomerNameTb.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
+            CustomerNameTb.Depth = 0;
+            CustomerNameTb.Font = new Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CustomerNameTb.HidePromptOnLeave = false;
+            CustomerNameTb.HideSelection = true;
+            CustomerNameTb.Hint = "Customer Name";
+            CustomerNameTb.InsertKeyMode = InsertKeyMode.Default;
+            CustomerNameTb.LeadingIcon = null;
+            CustomerNameTb.Location = new Point(37, 199);
+            CustomerNameTb.Mask = "";
+            CustomerNameTb.MaxLength = 32767;
+            CustomerNameTb.MouseState = MaterialSkin.MouseState.OUT;
+            CustomerNameTb.Name = "CustomerNameTb";
+            CustomerNameTb.PasswordChar = '\0';
+            CustomerNameTb.PrefixSuffixText = null;
+            CustomerNameTb.PromptChar = '_';
+            CustomerNameTb.ReadOnly = false;
+            CustomerNameTb.RejectInputOnFirstFailure = false;
+            CustomerNameTb.ResetOnPrompt = true;
+            CustomerNameTb.ResetOnSpace = true;
+            CustomerNameTb.RightToLeft = RightToLeft.No;
+            CustomerNameTb.SelectedText = "";
+            CustomerNameTb.SelectionLength = 0;
+            CustomerNameTb.SelectionStart = 0;
+            CustomerNameTb.ShortcutsEnabled = true;
+            CustomerNameTb.Size = new Size(218, 48);
+            CustomerNameTb.SkipLiterals = true;
+            CustomerNameTb.TabIndex = 13;
+            CustomerNameTb.TabStop = false;
+            CustomerNameTb.TextAlign = HorizontalAlignment.Left;
+            CustomerNameTb.TextMaskFormat = MaskFormat.IncludeLiterals;
+            CustomerNameTb.TrailingIcon = null;
+            CustomerNameTb.UseSystemPasswordChar = false;
+            CustomerNameTb.ValidatingType = null;
             // 
             // CustomerId
             // 
@@ -392,7 +395,7 @@
             Controls.Add(EditBttn);
             Controls.Add(AddBttn);
             Controls.Add(CustomerPhoneTb);
-            Controls.Add(this.CustomerNameTb);
+            Controls.Add(CustomerNameTb);
             Controls.Add(CustomerId);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ManageCustomers";
@@ -419,7 +422,7 @@
         private MaterialSkin.Controls.MaterialButton AddBttn;
         private MaterialSkin.Controls.MaterialMaskedTextBox Phone;
         private MaterialSkin.Controls.MaterialMaskedTextBox Password;
-        private MaterialSkin.Controls.MaterialMaskedTextBox FullName;
+        private MaterialSkin.Controls.MaterialMaskedTextBox CustomerNameTb;
         private MaterialSkin.Controls.MaterialMaskedTextBox CustomerId;
         private MaterialSkin.Controls.MaterialMaskedTextBox CustomerPhoneTb;
     }

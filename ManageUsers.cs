@@ -13,7 +13,7 @@ namespace InventoryMngmtSys
 {
     public partial class ManageUsers : Form
     {
-        SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=A:\Projects\InventoryManagementSys\InventoryMngmtSys\DB\InventoryDB.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True");
+        SqlConnection Connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB\InventoryDB.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True");
         public ManageUsers()
         {
             InitializeComponent();
